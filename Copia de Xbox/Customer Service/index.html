@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicio al</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <p>Servicio al Cliente</p>
+      <h1>Preguntas Frecuentes</h1>
+
+      <div class="faq">
+        <button class="accordion">
+          ¿Como recuperar mi cuenta?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Vaya a la seccion de "No puedo iniciar sesion", una vez ahi; proporciones un correo electronico en el cual 
+            podamos propocionarle el codigo de recuperacion y un cambio de contraseña nuevo
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          ¿Como cancelo mi subscripcion?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            La subscripcion puede cancelarse siguiendo los siguientes pasos, Configuracion de cuenta>susbcripciones>cancelar susbcripciones
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          ¿Como realizo los pagos?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Los pagos pueden realizarse mediante targeta de debito, tales como: Visa, MasterCard, BBVA, Santander,American EXpress.
+            Como tambien pagos mediante aplicativo, tales como: Yape, Plin, PagoEfectivo, Google Pay,etc. Para mas infomacion de un
+            viztaso a terminos y condiciones.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          ¿Como se aplican los descuentos?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            La mayoria de los descuentos son aplicables solo en los feriados o dias festivos de Estadounidenses, aunque los descuentos de calendario
+            son aplicables no importando el pais, tales como rebajas de Pascua,Navidad,etc
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          ¿Restricciones de Paises?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            No todos los paises aceptan nuestros servicios, por lo tanto recomendamos revisar bien nuestros terminos y condiciones
+            antes de comprar o adquirir nuestros servicios para evitar problemas.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          ¿Como canjeo codigos?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Los codigos pueden comprarse en tiendas y distribuidores oficiales en tu zona y ser canjeados en: 
+            tienda>compras>Canjear codigo>Fisico
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
